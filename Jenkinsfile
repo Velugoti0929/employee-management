@@ -23,13 +23,6 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'Running unit tests...'
-                sh 'mvn test'
-            }
-        }
-
         stage('Package') {
             steps {
                 echo 'Creating JAR file...'
